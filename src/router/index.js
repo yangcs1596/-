@@ -14,6 +14,12 @@ export default new Router({
       path: '/select',
       name: 'elSelect',
       component: () => import('@/select/elSelectLazy'),
+    },
+    {
+      path: '/form',
+      name: 'CreateTest',
+      component: () => import('@/components/CreateTest'),
     }
+    // {path:'*',redirect: '404'}
   ]
 })
