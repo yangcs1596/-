@@ -453,7 +453,6 @@
             value:["http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg"],
             props:{
               type:"image",
-              src:"iframe.html",
               maxLength:1
             },
             validate:[

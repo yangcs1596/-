@@ -19,7 +19,23 @@ export default new Router({
       path: '/form',
       name: 'CreateTest',
       component: () => import('@/components/CreateTest'),
+    },
+    {
+      path: '/draggableTest',
+      name: 'DraggableTest',
+      component: () => import('@/view/form/draggableTest.vue'),
+    },
+    {
+      path: '/draggableT',
+      name: 'DraggableT',
+      component: () => import('@/view/form/draggableT.vue'),
+    },
+    {
+      path: '/draggable3',
+      name: 'Draggable3',
+      component: () => import('@/view/form/draggable3.vue'),
     }
+
     // {path:'*',redirect: '404'}
   ]
 })
