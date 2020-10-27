@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <!--pdf预览地址-->
+    <!--pdf预览地址 https://www.cnblogs.com/wuqilang/p/13031290.html-->
     <div class="show-certificat-img">
       <a :href="'../../../static/js/pdf/web/viewer.html?file=' + url" target="_blank">哈哈哈</a>
     </div>
