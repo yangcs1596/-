@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import ElementUI from 'element-ui';
 import draggable from 'vuedraggable'
 // 引入form-create 表单生成器
@@ -21,5 +22,6 @@ Vue.use(draggable);
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })

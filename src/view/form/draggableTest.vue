@@ -2,7 +2,8 @@
   <div class="root">
     <!--pdf预览地址 https://www.cnblogs.com/wuqilang/p/13031290.html-->
     <div class="show-certificat-img">
-      <a :href="'../../../static/js/pdf/web/viewer.html?file=' + url" target="_blank">哈哈哈</a>
+      <!--<a :href="'/static/js/pdf/web/viewer.html?file=' + url" target="_blank">哈哈哈</a>-->
+      <iframe :src="'/static/js/pdf/web/viewer.html?file=' + url"  width="100%" height="400px"></iframe>
     </div>
 
     <draggable
@@ -97,7 +98,7 @@
         console.log('监听到拖动结束', params)
       },
       onDrop (params) {
-        // this.list.push(this.list.length + 1)
+        this.list.push(this.list.length + 1)
         console.log('监听到被拖动元素放下', params)
       },
       onDragEnter (params) {
