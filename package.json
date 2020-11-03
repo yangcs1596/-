@@ -23,6 +23,7 @@
     "jquery-weui": "^1.2.1",
     "js-cookie": "^2.2.1",
     "node-sass": "^4.14.1",
+    "pdfjs-dist": "2.4.456",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuedraggable": "^2.24.2",
