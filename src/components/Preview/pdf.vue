@@ -1,6 +1,6 @@
 <template>
   <div class="center">
-    <div class="contor">
+    <div class="contor" ref="aaa">
       <el-button @click="prev">上一页</el-button>
       <el-button @click="next">下一页</el-button>
       <span>Page: <span v-text="page_num"/> / <span v-text="page_count"/></span>
@@ -17,6 +17,8 @@
 <script>
   import PDFJS from "pdfjs-dist";
   import workerSrc from 'pdfjs-dist/build/pdf.worker.entry'
+  //动画效果控制器
+  import {TweenLite} from 'gsap'
   // let PDFJS = require('pdfjs-dist');
   // PDFJS.GlobalWorkerOptions.workerSrc = require('pdfjs-dist/build/pdf.worker.min');
   export default {
@@ -109,6 +111,7 @@
         vm.queueRenderPage(vm.pageNum)
       },
       next() { // 下一页
+        TweenLite.fromTo('div', 5, {opacity:1}, {opacity:0});
         const vm = this
         if (vm.pageNum >= vm.page_count) {
           return

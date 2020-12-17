@@ -1,5 +1,6 @@
 <template>
   <div class="center">
+    <mark-down-edit></mark-down-edit>
     <div class="contor">
       <el-button @click="prev">上一页</el-button>
       <el-button @click="next">下一页</el-button>
@@ -31,6 +32,7 @@
   import workerSrc from 'pdfjs-dist/build/pdf.worker.entry'
   // let PDFJS = require('pdfjs-dist');
   // PDFJS.GlobalWorkerOptions.workerSrc = require('pdfjs-dist/build/pdf.worker.min');
+  import MarkDownEdit from '@/components/MarkDown/MarkDownEdit'
   export default {
     directives: {
       drag(el, bindings) {
@@ -77,6 +79,7 @@
         list:[]
       }
     },
+    components:{MarkDownEdit},
     computed: {
       ctx() {
         const id = document.getElementById('the-canvas')
@@ -194,6 +197,8 @@
           this.renderPage(num)
         }
       }
+    },
+    watch: {
     }
   };
 </script>

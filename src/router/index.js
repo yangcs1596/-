@@ -34,8 +34,13 @@ export default new Router({
       path: '/draggable3',
       name: 'Draggable3',
       component: () => import('@/view/form/draggable3.vue'),
+    },
+    {
+      path: '/scroll',
+      name: 'ScrollDemo',
+      component: () => import('@/components/ScrollDemo/ScrollDemo'),
     }
 
-    // {path:'*',redirect: '404'}
+    ,{path:'*', component: () => import('@/view/Exception/404.vue'), meta: {title: '页面走失了'}}
   ]
 })
