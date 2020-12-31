@@ -8,7 +8,7 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: () => import('@/components/Preview/pdfTwo')
+      component: () => import('@/view/card/ReserveFlipper')
     },
     {
       path: '/select',
