@@ -12,6 +12,9 @@ import formCreate from "@form-create/element-ui"
 
 import 'element-ui/lib/theme-chalk/index.css';
 
+process.env.MOCK && require('@/api/mock')
+//表示配置MOCK为true的时候，才引入mock，所以生产环境的时候就不引入mock了
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI);

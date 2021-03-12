@@ -1,10 +1,10 @@
 <template>
   <div class="root">
     <!--pdf预览地址 https://www.cnblogs.com/wuqilang/p/13031290.html-->
-    <div class="show-certificat-img">
-      <!--<a :href="'/static/js/pdf/web/viewer.html?file=' + url" target="_blank">哈哈哈</a>-->
-      <iframe :src="'/static/js/pdf/web/viewer.html?file=' + url"  width="100%" height="400px"></iframe>
-    </div>
+    <!--<div class="show-certificat-img">-->
+      <!--&lt;!&ndash;<a :href="'/static/js/pdf/web/viewer.html?file=' + url" target="_blank">哈哈哈</a>&ndash;&gt;-->
+      <!--<iframe :src="'/static/js/pdf/web/viewer.html?file=' + url"  width="100%" height="400px"></iframe>-->
+    <!--</div>-->
     <!--vue-drag-resize的地址 https://github.com/kirillmurashov/vue-drag-resize-->
     <!--拖拽的组件还有vue-drag-resize没有用到； 这里用的是dnd.js 还有一个组件是vuedraggable-->
     <draggable
