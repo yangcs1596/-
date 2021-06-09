@@ -26,6 +26,7 @@
     "mockjs": "^1.1.0",
     "node-sass": "^4.14.1",
     "pdfjs-dist": "2.4.456",
+    "screenfull": "^5.1.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuedraggable": "^2.24.2",

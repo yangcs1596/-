@@ -8,7 +8,7 @@
       </div>
     </div>
     <div style="display: table-cell;height: 100%;vertical-align: middle;width: 50%;padding: 0 30px;">
-      <img src="./500_2.png" alt="error" style="width: 100%;">
+      <img src="../../assets/err_image/505.png" alt="error" style="width: 100%;">
     </div>
   </div>
 </template>

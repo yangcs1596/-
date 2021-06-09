@@ -6,14 +6,12 @@ import router from './router'
 import store from './store'
 import ElementUI from 'element-ui';
 import draggable from 'vuedraggable'
-// 引入form-create 表单生成器
 import formCreate from "@form-create/element-ui"
-// import formCreate from '@form-create/ant-design-vue';
+import './assets/css/index.scss'
+import 'element-ui/lib/theme-chalk/index.css'
 
-import 'element-ui/lib/theme-chalk/index.css';
-
-process.env.MOCK && require('@/api/mock')
 //表示配置MOCK为true的时候，才引入mock，所以生产环境的时候就不引入mock了
+process.env.MOCK && require('@/api/mock')
 
 Vue.config.productionTip = false
 

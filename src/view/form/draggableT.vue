@@ -28,12 +28,13 @@ onClone：function 当创建一个列表单元副本的时候的回调函数-->
       <!-- 左侧按钮 -->
       <draggable
         v-model="list1"
-        draggable=".c-item"
+        draggable=".item"
         @clone="clone"
         :options="{sort: true, group: {name: 'field', pull:'clone',put: false}}"
       >
         <div v-for="d in list1" class="item c-item">
           <el-button type="primary">{{d.name}}</el-button>
+          <el-input type="text" :placeholder=d.name></el-input>
         </div>
       </draggable>
     </div>

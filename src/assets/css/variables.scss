@@ -1,0 +1,59 @@
+$main-clr: #409eff;
+$main-txt-clr: #324658;
+$txt-clr1: #1890ff;
+$txt-clr2: #304156;
+$txt-clr3: #3388ff;
+$sub-txt-clr1: #8499ad;
+$date-clr1: #7c90a4;
+$bg-clr1: #1890ff;
+$bg-clr2: #fff;
+$bg-clr3: #f4f8fc;
+$bg-clr4: #1f2d3d;
+$hover-clr: #66b1ff;
+$hover-clr2: #1890ff;
+$hover-txt-clr: #1890ff;
+$container-bg: #f4f8fc;
+$link-clr: #788ea4;
+
+$bd-clr1: #ccc;
+$bd-clr2: #dce5ec;
+$bd-clr3: #f4f8fc;
+
+//sidebar
+$menuText: #bfcbd9;
+$menuActiveText: #409eff;
+$subMenuActiveText: #f4f4f5;
+
+/* 基本信息卡片 */
+$select-width: 344px;
+$card-height: 64px;
+$bd-clr: #aab0bb;
+
+$menuBg: #304156;
+$menuHover: #263445;
+
+$subMenuBg: #1f2d3d;
+$subMenuHover: #001528;
+
+$sideBarWidth: 180px;
+
+$hideSidebarWidth: 38px;
+
+$btn-default-clr: #1890ff;
+$btn-hover-clr: #46a6ff;
+
+// 主体内容高度
+$mainHeight: calc(100vh - 155px);
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
