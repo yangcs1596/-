@@ -1,26 +1,28 @@
 <template>
-  <section>
-    <h1>组件模式：使用&lt;form-create>&lt;/form-create> 或 &lt;FormCreate /> 标签来创建（生成）表单</h1>
+  <div style="height: 100%; overflow: auto">
+    <section>
+      <h1>组件模式：使用&lt;form-create>&lt;/form-create> 或 &lt;FormCreate /> 标签来创建（生成）表单</h1>
 
-    <br />
-    <a href="http://www.form-create.com/v2/guide/rule.html" target="_blank">表单 rule[] 生成规则</a>
+      <br/>
+      <a href="http://www.form-create.com/v2/guide/rule.html" target="_blank">表单 rule[] 生成规则</a>
 
-    <br />
-    <br />
-    <el-row>
-      <el-button type="success" @click="generateFormFn" icon="el-icon-setting">根据JSON生成表单</el-button>
-      <el-button type="primary" @click="ajaxSetDataFn" icon="el-icon-edit">Ajax请求初始化表单</el-button>
-      <el-button type="danger" @click="getFormModelFn" icon="el-icon-s-promotion">获取表单Model对象</el-button>
-    </el-row>
+      <br/>
+      <br/>
+      <el-row>
+        <el-button type="success" @click="generateFormFn" icon="el-icon-setting">根据JSON生成表单</el-button>
+        <el-button type="primary" @click="ajaxSetDataFn" icon="el-icon-edit">Ajax请求初始化表单</el-button>
+        <el-button type="danger" @click="getFormModelFn" icon="el-icon-s-promotion">获取表单Model对象</el-button>
+      </el-row>
 
-    <br />
-    <h3>使用&lt;form-create>&lt;/form-create>标签来创建（生成）表单：</h3>
-    <form-create v-model="fApi" :rule="rule" :option="option"></form-create>
+      <br/>
+      <h3>使用&lt;form-create>&lt;/form-create>标签来创建（生成）表单：</h3>
+      <form-create v-model="fApi" :rule="rule" :option="option"></form-create>
 
-    <br />
-    <!-- <h3>使用&lt;FormCreate /> 标签来创建（生成）表单：</h3> -->
-    <!-- <FormCreate v-model="fApi" :rule="rule" :option="option" /> -->
-  </section>
+      <br/>
+      <!-- <h3>使用&lt;FormCreate /> 标签来创建（生成）表单：</h3> -->
+      <!-- <FormCreate v-model="fApi" :rule="rule" :option="option" /> -->
+    </section>
+  </div>
 </template>
 
 <script>
@@ -29,7 +31,7 @@
 
   export default {
     name: "CreateTest",
-    components: { HelloWorld },
+    components: {HelloWorld},
     data() {
       return {
         // 实例对象
@@ -58,7 +60,7 @@
               }
             ],
             col: {
-              md: { span: 12 }
+              md: {span: 12}
             }
           },
 
@@ -98,7 +100,7 @@
               placeholder: "请输入用户密码！"
             },
             col: {
-              md: { span: 12 }
+              md: {span: 12}
             }
           },
 
@@ -120,10 +122,10 @@
             title: "性 别：",
             value: 0,
             options: [
-              { label: "先 生", value: 1 },
-              { label: "女 士", value: 2 },
-              { label: "人 妖", value: 3, disabled: true },
-              { label: "未 知", value: 0 }
+              {label: "先 生", value: 1},
+              {label: "女 士", value: 2},
+              {label: "人 妖", value: 3, disabled: true},
+              {label: "未 知", value: 0}
             ]
           },
 
@@ -133,11 +135,11 @@
             title: "爱 好：",
             value: [1, 3],
             options: [
-              { label: "吃喝", value: 1 },
-              { label: "上班", value: 2, disabled: true },
-              { label: "旅游", value: 3 },
-              { label: "运动", value: 4 },
-              { label: "学习", value: 5, disabled: true }
+              {label: "吃喝", value: 1},
+              {label: "上班", value: 2, disabled: true},
+              {label: "旅游", value: 3},
+              {label: "运动", value: 4},
+              {label: "学习", value: 5, disabled: true}
             ]
           },
 
@@ -148,16 +150,16 @@
             value: 6,
             col: {
               //   sx: {span: 24}
-              md: { span: 10 }
+              md: {span: 10}
             },
             options: [
-              { label: "内国走走", value: 1 },
-              { label: "呆在公司", value: 2, disabled: true },
-              { label: "非洲美洲", value: 3 },
-              { label: "港澳台游", value: 4 },
-              { label: "东南亚游", value: 5 },
-              { label: "澳洲旅游", value: 6 },
-              { label: "自驾游", value: 7 }
+              {label: "内国走走", value: 1},
+              {label: "呆在公司", value: 2, disabled: true},
+              {label: "非洲美洲", value: 3},
+              {label: "港澳台游", value: 4},
+              {label: "东南亚游", value: 5},
+              {label: "澳洲旅游", value: 6},
+              {label: "自驾游", value: 7}
             ]
           },
 
@@ -167,20 +169,20 @@
             title: "想多选点：",
             value: [3, 5],
             col: {
-              md: { span: 14 }
+              md: {span: 14}
             },
             props: {
               multiple: true,
               placement: "bottom"
             },
             options: [
-              { label: "内国走走", value: 1 },
-              { label: "呆在公司", value: 2, disabled: true },
-              { label: "非洲美洲", value: 3 },
-              { label: "港澳台游", value: 4 },
-              { label: "东南亚游", value: 5 },
-              { label: "澳洲旅游", value: 6 },
-              { label: "自驾游", value: 7 }
+              {label: "内国走走", value: 1},
+              {label: "呆在公司", value: 2, disabled: true},
+              {label: "非洲美洲", value: 3},
+              {label: "港澳台游", value: 4},
+              {label: "东南亚游", value: 5},
+              {label: "澳洲旅游", value: 6},
+              {label: "自驾游", value: 7}
             ]
           }
         ],
@@ -254,20 +256,20 @@
           //   children:['加载中']
           // },
           {
-            type:'template',
-            name:'btn',
-            template:'<el-button :loading="loading">{{text}}</el-button>',
+            type: 'template',
+            name: 'btn',
+            template: '<el-button :loading="loading">{{text}}</el-button>',
             vm: new Vue({
-              data:{
-                loading:true,
-                text:'加载中'
+              data: {
+                loading: true,
+                text: '加载中'
               }
             })
           },
           {
-            type:'template',
-            name:'btn',
-            template:'<el-button @click="onClick" long :disabled="disabled">{{num}}</el-button>',
+            type: 'template',
+            name: 'btn',
+            template: '<el-button @click="onClick" long :disabled="disabled">{{num}}</el-button>',
             vm: new Vue({
               data: {
                 num: 0,
@@ -303,7 +305,7 @@
             })
           },
 
-        {
+          {
             type: "slider",
             field: "volume",
             title: "音量大小：",
@@ -323,7 +325,7 @@
             title: "商品增减：",
             value: 0,
             col: {
-              md: { span: 12 }
+              md: {span: 12}
             },
             validate: [
               {
@@ -341,7 +343,7 @@
             title: "喜欢颜色：",
             value: "#00b102",
             col: {
-              md: { span: 12 }
+              md: {span: 12}
             },
             props: {
               alpha: true
@@ -383,7 +385,7 @@
             ],
             control: [
               {
-                handle: function(val) {
+                handle: function (val) {
                   console.log(val + "颗星");
                 }
               }
@@ -396,7 +398,7 @@
             title: "打开关闭：",
             value: true,
             col: {
-              md: { span: 6 }
+              md: {span: 6}
             },
             props: {
               trueValue: true,
@@ -418,7 +420,7 @@
               "https://inews.gtimg.com/newsapp_ls/0/11673643537_295195/0"
             ],
             col: {
-              md: { span: 18 }
+              md: {span: 18}
             },
             validate: [
               {
@@ -440,30 +442,28 @@
               maxSize: 2048, // 上传文件大小最大值
               maxLength: 1, // 上传文件数量最大值
               action: "http://www.upimage.com/imguploadApi", // 上传后端接收API接口
-              onSuccess: function(res) {
+              onSuccess: function (res) {
                 return ""; // 上传成功回调函数
               }
             }
           },
 
           {
-            type:"frame",
-            title:"素材",
-            field:"fodder",
-            value:["http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg"],
-            props:{
-              type:"image",
-              maxLength:1
+            type: "frame",
+            title: "素材",
+            field: "fodder",
+            value: ["http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg"],
+            props: {
+              type: "image",
+              maxLength: 1
             },
-            validate:[
-              {required:true, type: 'array', min: 2, message: '请选择2张图片', trigger: 'change'}
+            validate: [
+              {required: true, type: 'array', min: 2, message: '请选择2张图片', trigger: 'change'}
             ],
             col: {
-              md: { span: 12 }
+              md: {span: 12}
             }
           }
-
-
         );
       },
 
@@ -490,7 +490,8 @@
     border: 1px solid gray;
     border-radius: 8px;
   }
-  .el-upload{
+
+  .el-upload {
     display: none;
   }
 </style>

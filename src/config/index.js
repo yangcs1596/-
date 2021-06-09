@@ -10,7 +10,7 @@ export default {
   /**
    * @description 此处修改网站名称
    */
-  webName: '法信公证云',
+  webName: '测试系统',
   /**
    * @description 是否只保持一个子菜单的展开
    */

@@ -11,7 +11,7 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <div style="height: 18px; color: white; font-size: 20px; text-align: center">法信公证云</div>
+        <div style="height: 18px; color: white; font-size: 20px; text-align: center">测试管理</div>
         <div style="height: 4px; color: white; font-size: 12px; text-align: center">JUSTICE & FAITH</div>
       </el-col>
     </el-row>
